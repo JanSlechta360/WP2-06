@@ -6,27 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-    
-<?php
-for($i=1; $i<11;$i++)
-{
-    ?> <br> <?php
-    for($j=1; $j<11; $j++)
-    {
-        $total = $i+$j;
-        if($total%2 == 0)
-        {
-            echo "X";
+    <?php
+        for ($i=0; $i < 10; $i++) { ?>
+            <br>
+            <?php
+            for ($j=0; $j < 10 ; $j++) { 
+                if ($j % 2 == 0) {
+                    echo "x";
+                } else {
+                   echo "o";
+                }
+            }
         }
-        else
-        {
-            echo "O";
-        }
-        
-    }
-    ?> <?php
-}
-?>
+
+    ?>
+
+
+
+
 
 </body>
 </html>
